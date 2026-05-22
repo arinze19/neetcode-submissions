@@ -1,0 +1,37 @@
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        res = []
+        phone = {
+            "2": ["a","b","c"],
+            "3": ["d","e","f"],
+            "4": ["g","h","i"],
+            "5": ["j","k","l"],
+            "6": ["m","n","o"],
+            "7": ["p","q","r","s"],
+            "8": ["t","u","v"],
+            "9": ["w","x","y","z"]
+        }
+
+        # [23]
+        # 
+
+        def backtrack(path, index):
+
+            # base case
+            if index == len(digits):
+                res.append("".join(path))
+                return 
+            
+            # loop through
+            for i in range(len(phone[digits[index]])):
+                path.append(phone[digits[index]][i])
+                backtrack(path, index + 1)
+                path.pop()
+
+        if digits:
+            backtrack([], 0)
+
+        return res
+
+
+            
