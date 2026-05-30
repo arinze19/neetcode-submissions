@@ -1,0 +1,11 @@
+left child = 2i + 1
+right child = 2i + 2
+parent = (i - 1) // 2
+[NOTE: This works for balaced trees only]
+
+Binary Search Tree: similar to Binary tree but with an extra property 
+                [Node]
+                /    \ 
+[Smaller than Node] [Larger or Equal to Node]
+
+When solving a binary tree problem with recursion, the first step is to figure out the return value of each recursive call

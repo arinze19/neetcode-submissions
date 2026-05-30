@@ -1,0 +1,3 @@
+Dummy Nodes 
+Fast and Slow pointers 
+returning the previous pointer 

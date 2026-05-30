@@ -1,0 +1,8 @@
+1. Leetcode 543: Diameter of a binary tree
+2. Leetcode 110: Balanced binary tree
+3. Leetcode 662: Maximum width of binary tree
+4. Leetcode 105: Construct binary tree from inorder and preorder traversal
+5. Leetcode 394: Decode string
+6. Leetcode 211: Design add and search words data structure
+
+7. Leetcode 51: N Queens

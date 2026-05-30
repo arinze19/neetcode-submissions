@@ -1,0 +1,17 @@
+For heaps you can get the left, right and parent of a node by doing the following:
+left = 2i + 1
+right = 2i + 2 
+parent = [(i - 1) // 2]
+
+heapq.nlargest O(nlogk)
+heapq.nsmallest O(nlogk)
+heapq.heapreplace | O(logk)
+heapq.heappop + heapq.heappush | O(2logk)
+
+strategies:
+1. Only keep heap size of k, for each new entrant not in k, skip or replace
+2. Utilise max heap by inverting the values in your heap
+
+notable algorithms:
+1. Quickselect
+2. Quicksort
