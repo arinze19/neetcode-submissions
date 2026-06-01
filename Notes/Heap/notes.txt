@@ -6,7 +6,9 @@ parent = [(i - 1) // 2]
 heapq.nlargest O(nlogk)
 heapq.nsmallest O(nlogk)
 heapq.heapreplace | O(logk)
+heapq.heappushpop
 heapq.heappop + heapq.heappush | O(2logk)
+heapq.merge
 
 strategies:
 1. Only keep heap size of k, for each new entrant not in k, skip or replace
@@ -15,3 +17,5 @@ strategies:
 notable algorithms:
 1. Quickselect
 2. Quicksort
+
+sort k-increasing-decreasing array

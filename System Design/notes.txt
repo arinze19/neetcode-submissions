@@ -1,0 +1,37 @@
+Interviewer Rubric 
+- Problem Navigation 
+- Solution Design 
+- Technical Excellence 
+- Communication and Collaboration
+
+"Interviewers are on alert for candidates who have simply memorized answers or material. 
+They'll test you by probing your reasoning, doubting your answers, or asking you to explore tradeoffs. 
+This is where having solid fundamentals which we'll cover coupled with appropriate depth are going to be critical to your success"
+
+DELIVERY FRAMEWORK
+- Requirements [5 mins]
+* Functional: What the system does 
+* Non-Functional: What the system is
+    1. Scalability 
+    2. CAP Theorem
+    3. Durability
+    3. Latency 
+    5. Environmental Constraints
+
+- Core Entities [2 mins]
+* Start with a first draft
+
+- API or Interface [5 mins]
+* Define REST api endpoints and payload and response
+
+- Data Flow [Optional]
+* What your backend does to the payload and how it produces the required results
+
+- High Level Design [10 mins]
+
+- Deep Dives [10 mins]
+"A common mistake candidates make is that they try to talk over their interviewer here. 
+There is a lot to talk about, sure, and for senior candidates being proactive is important, however, it's a balance. 
+Make sure you give your interviewer room to ask questions and probe your design. 
+Chances are they have specific signals they want to get from you and you're going to miss it if you're too busy talking. 
+Plus, you'll hurt your evaluation on communication and collaboration."

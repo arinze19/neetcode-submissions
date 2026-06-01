@@ -1,0 +1,10 @@
+Monotonic stacks 
+Types:
+1. Strictly Increasing 
+2. Non-Decreasing (Increasing)
+3. Strictly Decreasing
+4. Non-Increasing (Decreasing)
+
+"greater requires decreasing; smaller requires increasing"
+
+https://leetcode.com/discuss/post/2347639/a-comprehensive-guide-and-template-for-m-irii/
