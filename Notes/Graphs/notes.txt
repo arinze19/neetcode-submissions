@@ -1,0 +1,13 @@
+Graph traversals are O(V + E) 
+V = visited nodes 
+E = checked edges 
+(V + E) because for each node we check its surrounding edges making the operation sequential (V + E) and not nested (V * E)
+
+Related Topics
+- Union Finds (Disjointed Set)
+- Path compression
+- Union by Rank
+
+Related Algorithms
+- Bellman Ford
+- Dijkstra

@@ -4,5 +4,7 @@
 4. Leetcode 105: Construct binary tree from inorder and preorder traversal
 5. Leetcode 394: Decode string
 6. Leetcode 211: Design add and search words data structure
-
 7. Leetcode 51: N Queens
+8. Leetcode 417: Atlantic Pacific Flow
+9. Leetcode 621: Task Scheduler
+10. Leetcode 684: Redundant Connections

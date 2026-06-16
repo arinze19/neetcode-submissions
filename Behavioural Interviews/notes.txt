@@ -1,3 +1,4 @@
+PART 1
 CARL method [3 mins]
 C - Context [10%]
 A - Action [60%]
@@ -20,3 +21,5 @@ Core Signal Areas:
 
 Avoid fairy tale endings??
 Provide further details in the action
+
+PART 2
