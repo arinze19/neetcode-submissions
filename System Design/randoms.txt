@@ -1,0 +1,11 @@
+Load balancer algorithms
+1. Round robin
+2. Weighted round robin
+3. Sticky session
+4. Least connection
+
+
+Vertical Scaling
+- RAM
+- CPU 
+- Storage

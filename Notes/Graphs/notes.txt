@@ -2,12 +2,22 @@ Graph traversals are O(V + E)
 V = visited nodes 
 E = checked edges 
 (V + E) because for each node we check its surrounding edges making the operation sequential (V + E) and not nested (V * E)
+Directed Acyclic Graph (DAG): graph does not contain cycles
+Directed Graph: arrows point in one direction 
+Unidirected Graph: arrows point in multiple directions
+Tree: A connected graph without cycles
+Graphs are ideal for modeling and analyzing relationships between pairs of objects.
 
 Related Topics
 - Union Finds (Disjointed Set)
 - Path compression
 - Union by Rank
+- Khans algorithm
 
 Related Algorithms
-- Bellman Ford
-- Dijkstra
+- Khan: Used to topological sort a graph
+- Union Find: Detecting cycles between two nodes in a graph
+- Bellman-Ford: 
+    * Can't be used in a negative weight cycle
+- Dijkstra: Like a BFS but with priority queue (heap)
+- Minimum Spanning Trees: 
