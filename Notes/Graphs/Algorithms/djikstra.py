@@ -1,5 +1,10 @@
 import heapq 
 
+'''
+Constraints
+1. Does not work for negative weight edges
+'''
+
 # space | O(V + E)
 # time | O(E log V)
 def djikstra(times, start, no_of_nodes):

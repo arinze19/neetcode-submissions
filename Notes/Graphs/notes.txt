@@ -20,4 +20,92 @@ Related Algorithms
 - Bellman-Ford: 
     * Can't be used in a negative weight cycle
 - Dijkstra: Like a BFS but with priority queue (heap)
-- Minimum Spanning Trees: 
+- Minimum Spanning Trees: Kruskal or Prim's Algorithm
+- Multi-source BFS: Multi source shortest
+
+------------------ Study Guide ------------------
+Day One - Djikstra Deep Dive
+Goal: solidify heap size intuition and when to use Dijkstra
+1. Re-implement Dijkstra from scratch (no peeking!)
+2. Solve LC 743  (Network Delay Time)         ← already done, revisit
+3. Solve LC 1631 (Path With Minimum Effort)
+4. Solve LC 778  (Swim in Rising Water)
+
+Key question to answer:
+"Why does the heap hold E entries not V entries?"
+
+------------------------------------------------------------------------
+
+Day Two - Bellman-Ford + Algorithm Selection
+Goal: know when to pick Dijkstra vs Bellman-Ford vs BFS
+
+1. Implement Bellman-Ford from scratch
+2. Solve LC 743  using Bellman-Ford (compare with Dijkstra solution)
+3. Solve LC 787  (Cheapest Flights Within K Stops) ← Bellman-Ford specific
+4. Solve LC 1334 (Find the City With Smallest Number of Neighbors)
+
+Decision tree to memorize:
+Negative weights?  → Bellman-Ford
+Unweighted graph?  → BFS
+Positive weights?  → Dijkstra
+
+------------------------------------------------------------------------
+Day Three  - Multi-Source BFS
+Goal: recognize when to seed multiple starting nodes
+
+1. Re-implement Islands and Treasures from scratch
+2. Solve LC 994  (Rotting Oranges)             ← already done, revisit
+3. Solve LC 542  (01 Matrix)
+4. Solve LC 1162 (As Far from Land as Possible)
+
+Key question to answer:
+"When do I seed ONE source vs MULTIPLE sources?"
+------------------------------------------------------------------------
+
+Day Four - New Concepts 
+
+Goal: expand graph toolkit
+
+BIPARTITE (morning):
+1. Learn bipartite check using BFS coloring
+2. Solve LC 785  (Is Graph Bipartite?)
+3. Solve LC 886  (Possible Bipartition)
+
+FLOYD-WARSHALL (afternoon):
+1. Learn all-pairs shortest path concept
+2. Solve LC 1334 (Find the City)
+3. Compare Floyd-Warshall vs running Dijkstra V times
+
+------------------------------------------------------------------------
+
+Day Five - Prim's Algorithm
+
+Goal: complete MST knowledge
+
+1. Learn Prim's and compare with Kruskal's
+2. Implement Prim's from scratch
+3. Solve LC 1584 (Min Cost to Connect All Points)
+4. Solve same problem with Kruskal's → compare solutions
+
+Key question to answer:
+"When would you prefer Prim's over Kruskal's?"
+
+------------------------------------------------------------------------
+
+Day Six - Review + Mixed practice 
+
+Goal: algorithm selection under pressure
+
+1. Solve 5 random graph problems without looking at tags
+2. For each problem answer BEFORE coding:
+   - Is this weighted or unweighted?
+   - Single source or multi source?
+   - Do I need shortest path or just connectivity?
+   - Which algorithm fits?
+
+Recommended problems:
+LC 1091 (Shortest Path in Binary Matrix)
+LC 847  (Shortest Path Visiting All Nodes)
+LC 399  (Evaluate Division)  ← currency converter variant!
+LC 1197 (Minimum Knight Moves)
+LC 909  (Snakes and Ladders)

@@ -1,3 +1,7 @@
+'''
+Constraints 
+1. Does not work for directed graphs
+'''
 def kruskal(edges, n):
     parents = [i for i in range(n)]
     edges.sort(key=lambda x: x[2])

@@ -12,6 +12,7 @@ This is where having solid fundamentals which we'll cover coupled with appropria
 DELIVERY FRAMEWORK
 - Requirements [5 mins]
 * Functional: What the system does 
+    1. Prioritize at least 3 core functionalities and others can be below the line requirement. make sure to confirm with interviewer to see if anyone below the line needs to be bumped up
 * Non-Functional: What the system is
     1. Scalability 
     2. CAP Theorem
@@ -37,9 +38,18 @@ Make sure you give your interviewer room to ask questions and probe your design.
 Chances are they have specific signals they want to get from you and you're going to miss it if you're too busy talking. 
 Plus, you'll hurt your evaluation on communication and collaboration."
 
+Learnings 
+SELECT FOR UPDATE: locks a row for an indefinite amount of time until commited or session timeout  [done]
+Locking Strategies [done]
+    - distributed locks with key-value store (redis)
+    - cron job based locks with "expiry" fields on the entities
+Redis sorted set: sorted from lowest to highest by default [done]
+Full text search using GIN or tsvector
+Elastic search (Full text search engine)
+
+
 
 ===================== System design book =====================
 1. Response Time = Latency + Processing Time
 2. Durability and Latency Requirements
     - calculating durability for an individual system
-3. 

@@ -1,0 +1,23 @@
+------------------------ 2026-06-28 ------------------------
+1. TicketMaster
+Locking Strategies
+    SELECT FOR UPDATE: locks a row for an indefinite amount of time until commited or session timeout 
+    distributed locks with key-value store (redis)
+    cron job based locks with "expiry" fields on the entities
+Redis sorted set: sorted from lowest to highest by default
+Full text search using GIN or tsvector (postgresql)
+Elastic search (Full text search engine)
+CDC - Change Data Capture
+
+------------------------ 2026-06-29 ------------------------
+Types of Sharding 
+1. Consistent hashing
+2. Directory based Sharding
+3. Range based sharding 
+
+Issues with sharding
+    1. Hot Spots 
+        - Move to a dedicated shard
+    2. Cross shard operations 
+        - Cache results of expensive cross-shard queries
+        - Denormalization 

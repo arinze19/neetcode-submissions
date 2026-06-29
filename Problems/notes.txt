@@ -8,3 +8,5 @@
 8. Leetcode 417: Atlantic Pacific Flow
 9. Leetcode 621: Task Scheduler
 10. Leetcode 684: Redundant Connections
+11. Leetcode 5: Longest palindromic substring
+12. Leetcode 310: Minimum height trees
