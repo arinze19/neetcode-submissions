@@ -1,14 +1,22 @@
 # time | O(V * E)
 # space | O(V)
+'''
+Constraints
+Notes: explicitly define edges (forward and backward) if you intend graph to be undirected before running algorithm
+'''
 def bellmanFord(paths, start, no_of_nodes):
     travelTimes = { node: float("inf") for node in range(1, no_of_nodes + 1)}
     
     travelTimes[start] = 0
     
     for _ in range(no_of_nodes - 1):
+        snapshot = travelTimes.copy() # copy of current travel times
+        
         for source, destination, weight in paths:
-            if weight + travelTimes[source] < travelTimes[destination]:
-                travelTimes[destination] = weight + travelTimes[source]
+            if weight + travelTimes[source] < snapshot[destination]:
+                snapshot[destination] = weight + travelTimes[source]
+                
+        travelTimes = snapshot.copy()
                 
     for source, destination, weight in paths:
         if weight + travelTimes[source] < travelTimes[destination]:

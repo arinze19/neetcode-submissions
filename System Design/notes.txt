@@ -48,7 +48,6 @@ Full text search using GIN or tsvector
 Elastic search (Full text search engine)
 
 
-
 ===================== System design book =====================
 1. Response Time = Latency + Processing Time
 2. Durability and Latency Requirements

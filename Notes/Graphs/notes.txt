@@ -41,7 +41,7 @@ Goal: know when to pick Dijkstra vs Bellman-Ford vs BFS
 
 1. Implement Bellman-Ford from scratch
 2. Solve LC 743  using Bellman-Ford (compare with Dijkstra solution)
-3. Solve LC 787  (Cheapest Flights Within K Stops) ← Bellman-Ford specific
+3. Solve LC 787  (Cheapest Flights Within K Stops) ← Bellman-Ford specific*
 4. Solve LC 1334 (Find the City With Smallest Number of Neighbors)
 
 Decision tree to memorize:

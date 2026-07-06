@@ -21,3 +21,28 @@ Issues with sharding
     2. Cross shard operations 
         - Cache results of expensive cross-shard queries
         - Denormalization 
+
+------------------------ 2026-07-01 ------------------------
+1. OSI model pseudonym
+    - All: Application [HTTP/SMTP]
+    - People: Presentation [JSON parsing]
+    - Seem: Session [RPC]
+    - To: Transport [TCP/UDP]
+    - Need: Network [IP]
+    - Data: Data [WIFI, switches]
+    - Processing: Physical [Fiber optic cables]
+
+------------------------ 2026-07-02 ------------------------
+Behind the envelope math
+    1. Math.pow(10, 3) = 1kb
+    2. Math.pow(10, 6) = 1Mb
+    3. Math.pow(10, 9) = 1Gb
+    4. Math.pow(10, 12) = 1Tb
+    5. Math.pow(10, 15) = 1Pb
+Eventual consistency v Weak consistency
+
+------------------------ 2026-07-06 ------------------------
+1. Key Technologies 
+    - Databases (Indexing, Consistent hashing, Column family database)
+    - Blob storage (Chunking, Security, Cost)
+    - Search Optimized Database (Elastic Search, Inverted Index)

@@ -1,0 +1,5 @@
+1. For BFS mark source node(s) as visited first before commencing 
+    - on exploration of neighbors, mark node as visited before adding to queue
+
+BFS (unweighted)  → mark visited when PUSHED [early visited]   ✅
+Dijkstra (weighted) → mark visited when POPPED [late visited]  ✅
