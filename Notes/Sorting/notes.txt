@@ -1,0 +1,3 @@
+Bucket sort: 
+This is a sorting technique that involves dividing elements into various groups, or buckets. 
+These buckets are formed by uniformly distributing the elements

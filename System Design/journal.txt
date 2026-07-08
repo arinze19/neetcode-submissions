@@ -46,3 +46,16 @@ Eventual consistency v Weak consistency
     - Databases (Indexing, Consistent hashing, Column family database)
     - Blob storage (Chunking, Security, Cost)
     - Search Optimized Database (Elastic Search, Inverted Index)
+
+------------------------ 2026-07-08 ------------------------
+1. API gateways 
+2. Load balancers 
+3. Queues
+    - dead letter queue 
+    - message ordering 
+4. Streams/Event sourcing
+    - useful for processing large amounts of data in real time 
+    - pub/sub is a common use case for streams 
+5. Distributed locks 
+6. Distributed cache 
+    - sorted set + hash set (redis)
