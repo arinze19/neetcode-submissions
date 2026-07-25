@@ -1,0 +1,252 @@
+=================== DP PROPERTY
+- Optimal substructure 
+- Overlapping subproblem
+
+Top-Down (Memoization)
+Bottom-Up (Tabulation)
+
+1. Identify recurrence relation
+2. Identify the base case 
+3. Write recursive solution
+4. Add memoization
+5. Convert to bottom-up DP
+
+BASE CASES go into memo cache (as default placements)
+
+Identification Signals 
+"number of ways to..."      → counting DP
+"minimum/maximum cost to..."→ optimization DP
+"is it possible to..."      → boolean DP
+"longest/shortest..."       → sequence DP
+overlapping subproblems     → memoize!
+optimal substructure        → DP works!
+
+====================== NOTES
+dp indices represent STEPS 0 through n inclusive hence why tabulation tables usually include n + 1 spaces
+
+Backtracking (brute force, identify subproblems)
+      ↓
+Is greedy applicable?
+   YES → Greedy (O(n log n) usually)    STOP HERE if optimal
+   NO  ↓
+Memoization (top-down DP)
+      ↓
+Tabulation (bottom-up DP)
+      ↓
+Space Optimized
+
+
+====================== STUDY PLAN 
+Break problem into OVERLAPPING subproblems
+Store results to avoid recomputation
+
+Two approaches:
+Top-down    → recursion + memoization (cache results)
+Bottom-up   → tabulation (build from base cases up)
+
+Key question: "Have I solved this subproblem before?"
+
+The DP Recipe (Apply to Every Problem)
+Step 1: Define state    → "what does dp[i] represent?"
+Step 2: Recurrence      → "dp[i] = f(dp[i-1], dp[i-2]...)"
+Step 3: Base cases      → "dp[0] = ?, dp[1] = ?"
+Step 4: Traversal order → "left to right? diagonal?"
+Step 5: Extract answer  → "return dp[n]? max(dp)?"
+
+-------------------------------------
+
+Day 1 — 1D DP (Linear)
+Goal: understand memoization vs tabulation
+      and identifying recurrence relations
+
+Problems:
+1. LC 70   Climbing Stairs [done]        
+2. LC 198  House Robber    [done]
+3. LC 213  House Robber II
+4. LC 322  Coin Change
+5. LC 300  Longest Increasing Subsequence
+
+Key question per problem:
+"What is my dp state and recurrence relation?"
+
+Expected complexity:
+Climbing Stairs → O(n) time, O(1) space
+House Robber    → O(n) time, O(1) space
+Coin Change     → O(n × amount) time, O(amount) space
+LIS             → O(n²) time, O(n) space
+
+-------------------------------------
+
+Day 2 — 2D DP (Grid)
+
+Goal: extend DP to 2D state space
+
+Theory:
+dp[i][j] → optimal solution considering 
+            first i items with constraint j
+            OR reaching cell (i,j) in a grid
+
+Problems:
+1. LC 62   Unique Paths
+2. LC 63   Unique Paths II
+3. LC 64   Minimum Path Sum
+4. LC 120  Triangle
+5. LC 931  Minimum Falling Path Sum
+
+Key question per problem:
+"How does dp[i][j] relate to dp[i-1][j] and dp[i][j-1]?"
+
+Expected complexity:
+All problems → O(n²) time, O(n²) → O(n) with rolling row
+
+-------------------------------------
+
+Day 3 — String DP
+
+Goal: apply DP to string problems
+
+Theory:
+dp[i][j] often represents optimal solution 
+for substrings s1[0:i] and s2[0:j]
+
+Problems:
+1. LC 1143 Longest Common Subsequence
+2. LC 72   Edit Distance
+3. LC 5    Longest Palindromic Substring
+4. LC 516  Longest Palindromic Subsequence
+5. LC 115  Distinct Subsequences
+
+Key question per problem:
+"How do characters at position i and j relate?"
+
+Expected complexity:
+LCS          → O(n×m) time, O(n×m) → O(n) space
+Edit Distance → O(n×m) time, O(n×m) → O(n) space
+
+-------------------------------------
+
+Day 4 — Knapsack DP
+
+Goal: master the most common DP pattern
+
+Theory:
+0/1 Knapsack    → each item used AT MOST once
+Unbounded       → items can be reused freely
+
+0/1 recurrence:
+dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight] + value)
+
+Unbounded recurrence:
+dp[w] = max(dp[w], dp[w-weight] + value)
+
+Problems:
+1. LC 416  Partition Equal Subset Sum  ← 0/1 knapsack
+2. LC 494  Target Sum                  ← 0/1 knapsack
+3. LC 322  Coin Change                 ← unbounded
+4. LC 518  Coin Change II              ← unbounded
+5. LC 474  Ones and Zeroes             ← 2D knapsack
+
+Key question per problem:
+"Can I reuse items? → determines knapsack variant"
+
+Expected complexity:
+All problems → O(n × W) time, O(W) space optimized
+
+-------------------------------------
+
+Day 5 — Interval DP
+
+Goal: apply DP to interval problems
+
+Theory:
+dp[i][j] = optimal solution for interval [i,j]
+Try all split points k → dp[i][j] = f(dp[i][k], dp[k][j])
+Build from SMALLER intervals to LARGER
+
+Problems:
+1. LC 647  Palindromic Substrings
+2. LC 516  Longest Palindromic Subsequence
+3. LC 312  Burst Balloons
+4. LC 1039 Minimum Score Triangulation
+5. LC 375  Guess Number Higher or Lower II
+
+Key question per problem:
+"Where do I split the interval?"
+
+Expected complexity:
+All problems → O(n³) time, O(n²) space
+
+-------------------------------------
+
+Day 6 — DP on Trees
+
+Goal: apply DP thinking to tree structures
+
+Theory:
+State defined at each node
+DFS returns value used by parent
+Results propagate BOTTOM-UP
+
+Problems:
+1. LC 124  Binary Tree Maximum Path Sum
+2. LC 337  House Robber III
+3. LC 543  Diameter of Binary Tree     ← already solved ✅
+4. LC 968  Binary Tree Cameras
+5. LC 1339 Maximum Product of Splitted Binary Tree
+
+Key question per problem:
+"What does my DFS return and how does parent use it?"
+
+Expected complexity:
+All problems → O(n) time, O(h) space
+
+-------------------------------------
+
+Day 7 — Stock Problems (DP Series)
+
+Goal: master state machine DP
+
+Theory:
+State machine tracks what you CAN do next:
+  holding    → can sell or rest
+  not holding → can buy or rest
+  cooldown   → must rest
+
+dp[i][holding] = max profit at day i
+
+Problems:
+1. LC 121  Best Time to Buy and Sell Stock     ← warmup
+2. LC 122  Best Time to Buy and Sell Stock II
+3. LC 123  Best Time to Buy and Sell Stock III
+4. LC 188  Best Time to Buy and Sell Stock IV
+5. LC 309  Best Time to Buy and Sell Stock with Cooldown
+
+Key question per problem:
+"What states are possible at each day?"
+
+Expected complexity:
+LC 121 → O(n) time, O(1) space
+LC 188 → O(n×k) time, O(k) space
+
+-------------------------------------
+
+Day 8 — Mixed Practice + Review
+
+Goal: algorithm selection under pressure
+
+1. Solve 5 problems WITHOUT looking at tags
+2. For each problem answer BEFORE coding:
+   "What is my DP state?"
+   "What is my recurrence relation?"
+   "What are my base cases?"
+   "Time and space complexity?"
+
+Mixed problems:
+LC 139  Word Break                     ← 1D DP
+LC 152  Maximum Product Subarray       ← 1D DP
+LC 97   Interleaving String            ← 2D DP
+LC 1143 Longest Common Subsequence     ← String DP
+LC 312  Burst Balloons                 ← Interval DP
+
+
+

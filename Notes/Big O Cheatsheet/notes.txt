@@ -1,0 +1,5 @@
+Quadratic Time (n^2):
+    only quadratic if nested function resets count back to 0
+    
+Exponential Time (2^n):
+    growth rate doubles with each addition

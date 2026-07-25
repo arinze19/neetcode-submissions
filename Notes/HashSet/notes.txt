@@ -1,0 +1,7 @@
+Signal words 
+1. duplicate 
+2. repeated 
+3. frequency 
+4. count 
+5. seen before 
+6. lookup

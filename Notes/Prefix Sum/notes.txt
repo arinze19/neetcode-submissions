@@ -1,0 +1,7 @@
+We can go about prefix sum in two ways 
+exclusive or current index = [1,2,3,4,5] -> [0,1,3,6,10,15] 
+inclusive of current index = [1,2,3,4,5] -> [1,3,6,10,15]
+The approach to use is up to you, however know the constraints 
+
+What exactly is the optimization for vowelStrings?? 
+    - both solutions run at O(n)

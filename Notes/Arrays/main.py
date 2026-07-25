@@ -1,5 +1,3 @@
-
-
 def nextGreater(arr):
     stack = []
     
