@@ -1,4 +1,0 @@
-QuadTrees in the wild (https://www.chidiwilliams.com/posts/quadtrees-in-the-wild):
-1. Spatial indexing
-    - QuadTrees 
-    - GeoHash

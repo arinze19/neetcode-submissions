@@ -1,0 +1,16 @@
+width is time
+Time = how many nodes are in the tree 
+Time = (number of nodes) * (work per call)
+
+height is space 
+Space = how tall it gets
+Space = (height of tree) * (memory one open call holds) + anything you keep on the side 
+
+time complexity of a recursive tree with n levels
+which also represents the number of nodes in the tree = 2^n 
+number of nodes at a specific level (k) = 2^k
+
+"Whenever a function is called, recursive or not, 
+the machine has to write down three things somewhere: the arguments and local variables of that particular call,
+which line it is currently on, and where to jump back to when it finishes. 
+That bundle of notes, for one single call, is a stack frame"

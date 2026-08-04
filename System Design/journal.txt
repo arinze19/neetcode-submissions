@@ -59,3 +59,20 @@ Eventual consistency v Weak consistency
 5. Distributed locks 
 6. Distributed cache 
     - sorted set + hash set (redis)
+
+------------------------ 2026-08-01 ------------------------
+Load balancer algorithms
+1. Round robin
+2. Weighted round robin
+3. Sticky session
+4. Least connection
+
+Vertical Scaling
+- RAM
+- CPU 
+- Storage
+
+write payload - 1000b -> 1000kb -> 1Mb
+    - here we are assuming 1mb is the average write payload
+database capacity - 5TB | does this mean the amount of compute a database can handle?
+10_000 writes per second * (1000 * 1000) = 10_000_000_000

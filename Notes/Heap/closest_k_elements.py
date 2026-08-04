@@ -5,7 +5,6 @@ def k_closest_elements(nums, k, target):
     
     while left < right:
         mid = (right + left) // 2 # this is the mid point between two valid windows
-        print(f"left: {left} \nright: {right} \nmid: {mid}")
         if target - nums[mid] > nums[mid + k] - target:
             left = mid + 1
         else:

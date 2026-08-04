@@ -19,7 +19,20 @@ Core Signal Areas:
 7. Communication 
 8. Leadership 
 
-Avoid fairy tale endings??
-Provide further details in the action
+STAR method
+1. Situation: Set Context    
+    - describe where working, team and nature of project
+    - focus on details that will matter later in the story 
 
-PART 2
+2. Task: Define your responsibility
+    - Outline the problem YOU were responsible for 
+    - include relevant deadlines or constraints
+
+3. Action: Explain what you did 
+    - Explain your thought process 
+    - highlight techincal, anaytical and interpersonal skills where relevant
+
+4. Result: Share the outcome 
+    - Highlight process improvements or lessons learned 
+    - Use numbers or metrics when possible 
+

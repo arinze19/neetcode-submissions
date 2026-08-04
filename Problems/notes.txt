@@ -1,7 +1,8 @@
-1. Leetcode 543: Diameter of a binary tree
-2. Leetcode 110: Balanced binary tree
+1. Leetcode 543: Diameter of a binary tree [done]
+2. Leetcode 110: Balanced binary tree [done]
 3. Leetcode 662: Maximum width of binary tree
 4. Leetcode 105: Construct binary tree from inorder and preorder traversal
+    [https://neetcode.io/solutions/construct-binary-tree-from-preorder-and-inorder-traversal]
 5. Leetcode 394: Decode string
 6. Leetcode 211: Design add and search words data structure
 7. Leetcode 51: N Queens
@@ -10,3 +11,15 @@
 10. Leetcode 684: Redundant Connections
 11. Leetcode 5: Longest palindromic substring
 12. Leetcode 310: Minimum height trees
+13. Leetcode 239: Maximum sliding window
+14. Leetcode 140: Word Break II
+    [https://neetcode.io/solutions/word-break-ii]
+
+============== CONCEPTS 
+1. Linked List 
+    - reversing nodes with recursion
+2. Prefix Sum 
+    - sweep line algorithm
+
+=============== PENDING LEETCODE
+https://neetcode.io/problems/extra-characters-in-a-string/question?list=neetcode250
