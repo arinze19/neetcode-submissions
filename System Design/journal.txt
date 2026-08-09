@@ -76,3 +76,8 @@ write payload - 1000b -> 1000kb -> 1Mb
     - here we are assuming 1mb is the average write payload
 database capacity - 5TB | does this mean the amount of compute a database can handle?
 10_000 writes per second * (1000 * 1000) = 10_000_000_000
+
+------------------------ 2026-08-07 ------------------------
+Geohashing == regional partitioning
+GeoSpatial index
+retries and exponential backoffs 
