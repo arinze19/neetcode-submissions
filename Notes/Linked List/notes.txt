@@ -1,3 +1,35 @@
 Dummy Nodes 
 Fast and Slow pointers 
 returning the previous pointer 
+offset pair
+
+1. `head` and `tail` are variables, not nodes
+2. Stages 
+    - 1st write: unlink (pointing previous node to None)
+    - 2nd write: attach to new position (pointing node.next to its new next)
+    - 3rd write: rewriting the head/tail/prev.next variable
+3. Principle for getting the order right in linked list operations 
+    - wire up your new connections before you tear down old ones
+5. Remember the checklist when handling operations in linked list 
+    - single 
+    - empty 
+    - first 
+    - last 
+    - absent
+6. Sentinel/Dummy node: removes the need for special if case for first node removal
+7. linked lists store a lot for the object overhead (bytes for the data + bytes for the information to the next data et al)
+
+TECHNIQUES
+0. Dummy/Sentinel nodes
+1. Reversing linked list 
+    - save 
+    - flip
+    - advance 
+    - advance 
+2. Fast and slow pointers 
+    - while fast and fast.next (odd number nodes + second of even nodes)
+    - while fast.next and fast.next.next (first of even nodes)
+    - if slow is fast NOT if slow == fast
+3. Offset pointers
+    - locating the kth node from the end 
+4. Trailing prev 

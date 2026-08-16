@@ -1,16 +1,46 @@
-width is time
-Time = how many nodes are in the tree 
-Time = (number of nodes) * (work per call)
+1.  Width is time
+    Time = how many nodes are in the tree 
+    Time = (number of nodes) * (work per call)
 
-height is space 
-Space = how tall it gets
-Space = (height of tree) * (memory one open call holds) + anything you keep on the side 
+2.  Height is space 
+    Space = how tall the recusive tree gets
+    Space = (height of tree) * (memory one open call holds) + anything you keep on the side 
 
-time complexity of a recursive tree with n levels
-which also represents the number of nodes in the tree = 2^n 
-number of nodes at a specific level (k) = 2^k
+3.  Time complexity of a recursive tree with n levels
+    which also represents the number of nodes in the tree = 2^n 
+    number of nodes at a specific level (k) = 2^k
 
-"Whenever a function is called, recursive or not, 
-the machine has to write down three things somewhere: the arguments and local variables of that particular call,
-which line it is currently on, and where to jump back to when it finishes. 
-That bundle of notes, for one single call, is a stack frame"
+4.  Whenever a function is called, recursive or not, 
+    the machine has to write down three things somewhere: 
+        1. The arguments and local variables of that particular call.
+        2. Which line it is currently on.
+        3. Where to jump back to when it finishes.  
+    That bundle of notes, for one single call, is a stack frame
+
+5.  Recusrion works well for the following cases
+        1. nested data with unknown depth
+        2. data whose small part is identical to the whole (Binary Tree)
+
+
+===============================================
+COMMON RECURSION BUGS
+===============================================
+
+1. unreachable base case 
+2. using a value before recursive call is made 
+3. ignoring the work/space used in each frame of the recursive tree (slice, splice operations)
+
+Interesting Decorators
+```python
+def trace(func):
+    depth = [0]
+    def wrapper(*args, **kwargs):
+        print("  " * depth[0] + f"→ {func.__name__}{args}")
+        depth[0] += 1
+        result = func(*args, **kwargs)
+        depth[0] -= 1
+        print("  " * depth[0] + f"← {func.__name__}{args} = {result}")
+        return result
+    return wrapper
+```
+
