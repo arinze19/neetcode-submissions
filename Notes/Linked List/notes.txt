@@ -26,10 +26,14 @@ TECHNIQUES
     - flip
     - advance 
     - advance 
-2. Fast and slow pointers 
+2. Fast and slow pointers (Floyd cycle detection) 
     - while fast and fast.next (odd number nodes + second of even nodes)
     - while fast.next and fast.next.next (first of even nodes)
     - if slow is fast NOT if slow == fast
 3. Offset pointers
     - locating the kth node from the end 
 4. Trailing prev 
+
+
+TIPS FOR LINKED LIST QUESTIONS 
+1. Picture the before and after state before writing code 

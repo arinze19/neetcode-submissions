@@ -15,12 +15,14 @@
 14. Leetcode 140: Word Break II
     [https://neetcode.io/solutions/word-break-ii]
 15. Leetcode 25: Reverse nodes in k groups [done]
+16. Leetcode 735: Asteroid collisions
 
 ============== CONCEPTS 
 1. Linked List 
     - reversing nodes with recursion
 2. Prefix Sum 
     - sweep line algorithm
+3. Struggling with when to remove from a visited set in a dfs
 
 =============== PENDING LEETCODE
 https://neetcode.io/problems/extra-characters-in-a-string/question?list=neetcode250
