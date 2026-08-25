@@ -1,8 +1,4 @@
-Dummy Nodes 
-Fast and Slow pointers 
-returning the previous pointer 
-offset pair
-
+=================== NOTES ===================
 1. `head` and `tail` are variables, not nodes
 2. Stages 
     - 1st write: unlink (pointing previous node to None)
@@ -19,7 +15,7 @@ offset pair
 6. Sentinel/Dummy node: removes the need for special if case for first node removal
 7. linked lists store a lot for the object overhead (bytes for the data + bytes for the information to the next data et al)
 
-TECHNIQUES
+=================== TECHNIQUES ===================
 0. Dummy/Sentinel nodes
 1. Reversing linked list 
     - save 
@@ -35,5 +31,5 @@ TECHNIQUES
 4. Trailing prev 
 
 
-TIPS FOR LINKED LIST QUESTIONS 
+=================== TIPS FOR LINKED LIST QUESTIONS ===================
 1. Picture the before and after state before writing code 

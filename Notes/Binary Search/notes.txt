@@ -1,0 +1,8 @@
+=================== BINARY SEARCH PATTERN ===================
+1. minimize the maximum or maximize the minimum 
+    - essentially a problem asking for a range of values?
+2. monotonicity is the real deal? 
+    - inspect the question if a boolean logic flips exactly once as you increase the params
+    - the parameter is what you binary search over and the parameter may not always be the index
+    - you binary search over the answer you're looking for, not necessarily the input
+    # false, false, false, true, true, true, true

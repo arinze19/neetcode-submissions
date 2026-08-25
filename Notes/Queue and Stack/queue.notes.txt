@@ -1,0 +1,38 @@
+=================== NOTES ===================
+A queue tracks two pointers instead of one (front, rear)
+Building a queue from two stacks 
+    -> only pour into out_stack when out_stack is empty? 
+    -> queue from stack seems to be more efficient that stack from queues? 
+circular array queue
+    - dequeue, next pop: (front + 1) % capacity
+    - enque, next write: (front + size) % capacity
+
+ways to handle queue full
+- overwrite first item
+- reject write request 
+
+rear == front as a way to validate if empty or full 
+
+deque (double ended queue) required problems
+-> sliding window maximum 
+-> 0-1 BFS
+-> undo and redo in one structure??
+-> palindrome checking
+
+-> For graph and grid problems mark a node as visited during enqueue time not at dequeue time 
+-> can created set with {()}
+-> when finding the full path length its generally a bad idea to store the path alongside the args 
+    in the visited set since this grows the visited set exponentially for really large graphs
+
+=================== TECHNIQUES ===================
+1. circular queue 
+2. streaming pattern (data expires as it moves out of stream scope)
+    - sliding/count based window (fixed) -> addition of an item at the back constitutes removal of another item at the front
+    - streaming/time based window (unfixed) -> addition of an item at the front can constitute removal of several items at the front
+3. BFS on grids, graphs and trees 
+4. topological sort
+5. monotonic deque 
+
+=================== REVISIT PAGE ===================
+Algorythms Course:
+Stacks and Queue module, slide 30

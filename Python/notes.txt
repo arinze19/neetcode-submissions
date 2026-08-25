@@ -1,0 +1,3 @@
+"string".split(",") -> convert a string to an array with the following delimeter
+reversed() ->   In Python, calling reversed() on a list does not copy the list or construct a new reversed array in memory. 
+                It simply creates an iterator that reads the list backward by index, taking O(1) time and O(1) extra space to set up

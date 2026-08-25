@@ -1,0 +1,57 @@
+=================== NOTES ===================
+browser history uses an undo and redo stack 
+BFS is built on queue
+
+Stack -> work that must be undone, matched or unwound 
+Queue -> work that must be fair or explored outward
+
+Main Question:
+1. Does this problem care about the most recent thing or the earliest thing? 
+2. What should one entry hold? 
+
+Abstract Data Type (ADT)
+stack usually converts O(n^2) -> O(n)
+difference in array based and linked list based stacks 
+    * cache locality 
+    * amortized push runtime
+array resize doubles capacity before writing
+when running a stack (dfs) using iteration, we add nested lists in reverse order to preserve the left-to-right arrangement
+recursive solutions are highly readable and are sometime preferred in interviews, just need to check with your interviewer first
+
+=================== TECHNIQUES ===================
+1. Next greater/Next smaller | Monotonic
+    Notes:
+    -> the stack holds the elements still waiting for an answer
+    -> O(n) runtime because the items can at most be touched 2n times (push and pop)
+    -> store the indices 
+
+    Problems: 
+    -> daily temperature [done]
+    -> next greater element I/II [done]
+    -> stock span [done]
+    -> largest rectangle in histogram 
+    -> trapping rain water 
+    -> remove k digits | duplicate letters
+
+    Variants:
+    -> next greater: pop while stack top smaller than current
+    -> next smaller: pop while stack top greater than current
+    -> previous greater: pop while stack top is smaller than current (read the survivor) 
+    -> previous smaller: pop while stack top is greater than current (read the survivor)
+
+    next X -> reads the answer off the element being popped 
+    previous X -> reads the answer off the element still on top afterwards
+
+2. Pairing/Matching [done]
+3. Nesting [done]
+4. Reversal/Undo
+
+
+
+
+=================== REVISIT PAGE ===================
+Algorythms Course:
+Stacks and Queue module, slide 24
+https://medium.com/@avinashtyagi1998/remove-duplicate-letters-i-knew-monotonic-stacks-but-this-problem-still-got-me-93c46565c29e
+
+

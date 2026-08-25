@@ -1,0 +1,3 @@
+5. Leetcode 394: Decode string
+16. Leetcode 735: Asteroid collisions
+17. Leetcode 1944: Number of visible people in a queue
