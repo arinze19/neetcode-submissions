@@ -15,7 +15,7 @@
 6. Sentinel/Dummy node: removes the need for special if case for first node removal
 7. linked lists store a lot for the object overhead (bytes for the data + bytes for the information to the next data et al)
 
-=================== TECHNIQUES ===================
+=================== PATTERNS ===================
 0. Dummy/Sentinel nodes
 1. Reversing linked list 
     - save 

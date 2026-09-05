@@ -1,3 +1,7 @@
-5. Leetcode 394: Decode string
-16. Leetcode 735: Asteroid collisions
-17. Leetcode 1944: Number of visible people in a queue
+1. Leetcode 394: Decode string
+2. Leetcode 735: Asteroid collisions
+3. Leetcode 1944: Number of visible people in a queue
+4. Leetcode 853: Car fleet
+5. Leetcode 84: Largest rectangle in histogram
+6. Leetcode 239: Maximum sliding window
+7. Leetcode 71: Simplify path

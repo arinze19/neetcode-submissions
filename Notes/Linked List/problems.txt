@@ -1,1 +1,13 @@
 15. Leetcode 25: Reverse nodes in k groups [done]
+
+
+===================== NOTES =====================
+8 Categories of Tree Problems 
+1. Measure a property 
+2. Compare two trees 
+3. Transform or modify 
+4. Path problems 
+5. Property validation 
+6. Level based 
+7. Construct/Reconstruct 
+8. Ancestors and relationships

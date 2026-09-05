@@ -18,7 +18,7 @@ array resize doubles capacity before writing
 when running a stack (dfs) using iteration, we add nested lists in reverse order to preserve the left-to-right arrangement
 recursive solutions are highly readable and are sometime preferred in interviews, just need to check with your interviewer first
 
-=================== TECHNIQUES ===================
+=================== PATTERNS ===================
 1. Next greater/Next smaller | Monotonic
     Notes:
     -> the stack holds the elements still waiting for an answer

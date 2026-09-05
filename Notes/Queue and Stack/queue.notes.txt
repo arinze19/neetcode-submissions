@@ -24,7 +24,7 @@ deque (double ended queue) required problems
 -> when finding the full path length its generally a bad idea to store the path alongside the args 
     in the visited set since this grows the visited set exponentially for really large graphs
 
-=================== TECHNIQUES ===================
+=================== PATTERNS ===================
 1. circular queue 
 2. streaming pattern (data expires as it moves out of stream scope)
     - sliding/count based window (fixed) -> addition of an item at the back constitutes removal of another item at the front

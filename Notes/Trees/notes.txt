@@ -10,6 +10,76 @@ Binary Search Tree: similar to Binary tree but with an extra property
 
 When solving a binary tree problem with recursion, the first step is to figure out the return value of each recursive call
 
-[Pre-order Traversal] => root->left->right
+[Pre-order Traversal] => root->left->right 
+    signature keyword: clone, serialize, pass down
 [In-order Traversal] => left->root->right
+    signature keyword: presentation of a BST
 [Post-order Traversal] => left->right->root
+    signature keyword: evaluate
+
+
+=============== TERMINOLOGIES ===============
+1. subtree - a node together with its children
+2. height - longest path downward in the tree
+3. root - a variable and not a node; similar to head in linked list
+4. tree -> no cycles 
+        -> one path between two nodes
+        -> one root/parent
+        * a tree is a connected acylcic graph
+5. siblings - children of the SAME parent node 
+6. ancestor - any node up the path to reach the parent (nodes could be their own ancestors but question needs to specify)
+7. depth of a node -> number of edges from root down to that node 
+8. height of a node -> number of edges from select node down to its deepest leaf node 
+
+=============== NOTES ===============
+1. height of a tree can referenced in either edges or nodes and clarifying which the problem uses is expected
+2. for binary tree -> full != complete != balanced != perfect
+    - full -> every node has 0 or 2 children
+    - complete -> every level is filled except possibly the last and is filled left to right
+    - perfect -> every internal node is has exactly 2 children and every leaf node is at same depth
+    - balanced -> children node differ in height by at most 1
+3.  Attempting to track every stack frame manually is the main source of difficulty in tree problems, and it is not necessary
+4. Each stack frame has its own copy of each value. never copied from parents unless a non-primitive value
+5. n Nodes | n-1 Edges | n+1 Leafs
+6. short circuiting using "or"
+7. sentinel return values
+
+=============== PATTERNS ===============
+1. base->recurse->combine
+2. bottom-up [postorder]
+3. top-down [preorder]
+4. two parameters
+5. return one thing; track another 
+
+6. Three questions to convert question to code:
+    -> what does function return for one subtree 
+    -> what does current node need from children to answer it
+    -> what is the contribution of current node 
+
+=============== COMMON MISTAKES ===============
+1. Misjudging the space as O(n) instead of O(h) 
+
+=============== QUESTIONS ===============
+1. Auxilliary space v Total space
+2. Heap v stack while addressing applicaiton stack limit
+    Location of the memory
+        -> the call stack which has fixed size 
+        -> the heap which can grow 
+3.  what does this mean?
+        Python evaluates both sides of a tuple assignment before performing either write, 
+        so no temporary variable is needed (in Java or JavaScript you need one)
+
+
+"""
+The general technique: when a recursive function calls
+a second recursive helper at every node, 
+the same values are being computed repeatedly. 
+Determine whether the helper can return the additional information instead. 
+Applying that question here reduces O(n²) to O(n), and the same question 
+is what converts naive recursion into dynamic programming.
+"""
+
+
+
+
+    
