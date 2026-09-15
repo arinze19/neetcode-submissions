@@ -4,3 +4,4 @@ reversed() ->   In Python, calling reversed() on a list does not copy the list o
 "string".rjust(count, string) -> pad
 zip -> combines sequences from multiple sequences into a single iterator of tuples
     -> if entities are not same length; shorter length takes precedence
+range(len(queue)) is evaluated once so can be used for BFS traversal

@@ -3,6 +3,6 @@
 3. Leetcode 662: Maximum width of binary tree [done]
 4. Leetcode 105: Construct binary tree from inorder and preorder traversal
     [https://neetcode.io/solutions/construct-binary-tree-from-preorder-and-inorder-traversal]
-8. Leetcode 417: Atlantic Pacific Flow
-10. Leetcode 684: Redundant Connections
-12. Leetcode 310: Minimum height trees
+5. Leetcode 310: Minimum height trees
+6. Leetcode 99: Recover binary tree
+    [https://neetcode.io/problems/recover-binary-search-tree/question]

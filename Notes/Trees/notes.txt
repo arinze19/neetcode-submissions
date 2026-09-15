@@ -69,6 +69,23 @@ When solving a binary tree problem with recursion, the first step is to figure o
         Python evaluates both sides of a tuple assignment before performing either write, 
         so no temporary variable is needed (in Java or JavaScript you need one)
 
+=============== CATEGORIES OF TREE PROBLEMS ===============
+1. Measure a property 
+2. Compare two trees 
+3. Validate tree property 
+4. Transform or modify 
+5. Path problems 
+6. Level based 
+7. Construct or reconstruct 
+8. Ancestors and relationships 
+
+is_complete [done]
+prune zero subtrees [done]
+valid BST [done]
+flatten to a linked list
+path sums III 
+binary tree maximum 
+
 
 """
 The general technique: when a recursive function calls

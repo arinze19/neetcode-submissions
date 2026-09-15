@@ -1,0 +1,41 @@
+1. Breadth first search 
+2. Binary search trees 
+
+=============== NOTES ===============
+1. A very deep tree is a reason to prefer BFS
+2. Prefer BFS in cases where stopping early can reduce work (shortest path) 
+3. Prefer DFS when Tree is extremely wide
+4. BST is a top-down property
+5. For BFS, discovering a node != processing it 
+6. BFS can be used for 
+    -> serialization 
+    -> shortest path on an unweighted graph
+
+=============== PATTERNS ===============
+1. BFS template 
+    -> setup per level accumulator 
+    -> per node work 
+    -> commit level result
+2. BST 
+    -> iterative O(1) and recursive O(h)
+    -> self balancing BST are mainly used in production systems
+    -> BST hardly has duplicate values but if there are duplicates, prefer to keep duplicate on right side
+    -> never bulk build a BST from sorted data
+        * shuffle first; insert from median 
+        * build from middle outward 
+    -> iterative version for kth smallest element since we can break out at a certain point in time 
+    -> LCA on BST
+        Walk down from the root. 
+        While both targets are on the same side, keep going. 
+        The first node where they disagree, or where one target is the node itself, is the answer
+
+===================== NOTES =====================
+8 Categories of Tree Problems 
+1. Measure a property 
+2. Compare two trees 
+3. Transform or modify 
+4. Path problems 
+5. Property validation 
+6. Level based 
+7. Construct/Reconstruct 
+8. Ancestors and relationships

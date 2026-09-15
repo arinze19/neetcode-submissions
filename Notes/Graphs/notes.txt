@@ -1,3 +1,7 @@
+- Dominance table or visited set
+- without dominance table; paths can be visited combinatorially sky-rocketing time complexity
+
+
 Graph traversals are O(V + E) 
 V = visited nodes 
 E = checked edges 
