@@ -28,6 +28,15 @@
         Walk down from the root. 
         While both targets are on the same side, keep going. 
         The first node where they disagree, or where one target is the node itself, is the answer
+    -> validating BST
+    -> optimising for repeated kth-smallest queries
+        * each node store the number of each subtree including itself [order statistic tree]
+
+===================== BST APPLICATIONS ==================
+1. Red-black trees 
+2. AVL trees 
+3. B/B+ trees 
+4. skip list 
 
 ===================== NOTES =====================
 8 Categories of Tree Problems 
