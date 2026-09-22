@@ -44,14 +44,9 @@ recursive solutions are highly readable and are sometime preferred in interviews
 
 2. Pairing/Matching [done]
 3. Nesting [done]
-4. Reversal/Undo
-
-
-
+4. Reversal/Undo [done]
 
 =================== REVISIT PAGE ===================
 Algorythms Course:
 Stacks and Queue module, slide 24
 https://medium.com/@avinashtyagi1998/remove-duplicate-letters-i-knew-monotonic-stacks-but-this-problem-still-got-me-93c46565c29e
-
-
