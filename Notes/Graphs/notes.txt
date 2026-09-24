@@ -34,6 +34,8 @@ NOTES
     - every edge inspected at most twice -> O(E) # loop for neighbor in adj_list[node]
     - total: O(V + E)
 14. In iterative DFS, node is recorded in visited on pop because two neighbours can add same node to stack
+15. using dictionary as a visited set while storing the count from start/parent node
+16. distance is number of edges 
 
 ---------------------
 
