@@ -1,0 +1,11 @@
+1. union find 
+2. djikstras 
+3. multi-source BFS 
+4. topological sorting 
+
+Lecture 1: Detecting cycles and dependency order 
+---------------------------
+- for a stack entry (node, parent) an already visited neighbour (not necessarily processed) that is not the parent indicates a cycle 
+
+Lecture 2: Weighted graphs 
+---------------------------
