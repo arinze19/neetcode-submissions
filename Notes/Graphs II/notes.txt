@@ -6,6 +6,12 @@
 Lecture 1: Detecting cycles and dependency order 
 ---------------------------
 - for a stack entry (node, parent) an already visited neighbour (not necessarily processed) that is not the parent indicates a cycle 
+- Some problem statements present the dependent first in an input pair, others present the source of the arrow first. 
+  The pair’s meaning determines the direction
+- 3-state DFS [unseen(0), visited(1), done(2)]
+- topological order -> can have multiple valid ordering
+   - keywords -> happens before, requires, depends on
+   - 3-state dfs or khan algorithm
 
 Lecture 2: Weighted graphs 
 ---------------------------
