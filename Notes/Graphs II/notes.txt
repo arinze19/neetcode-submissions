@@ -14,4 +14,15 @@ Lecture 1: Detecting cycles and dependency order
    - 3-state dfs or khan algorithm
 
 Lecture 2: Weighted graphs 
+[cost, spread and connectivity]
 ---------------------------
+- cheapest route | how long does spread take from several starting points | which vertices are connected as edges arrive
+- dijkstra 
+- multi-source bfs
+- Union Find (Disjoint-set union)
+- disjoint sets are groups that DO NOT overlap 
+- Union Find chooses one member of its collection as a representative 
+- Union Find uses path compression to avoid monotonic increasing runtimes with addition of new collection member 
+- Union roots by rank 
+  - only update rank of one when both ranks are equal
+  - root is a vertex whose parent is itself 
