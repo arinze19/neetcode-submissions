@@ -1,0 +1,11 @@
+Backtracking 
+- backtracking is built from choices that must satisfy constraints 
+- partial solution
+- decision tree 
+- branching factor: number of child calls available
+- depth: number of decisions from the root 
+- a constant number of choices at each node is not a rule for all backtracking problems
+- "working" state is the variable a call needs to know if continuation if feasible/allowed
+- invariant
+
+Top-down DP 

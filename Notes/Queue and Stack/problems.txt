@@ -5,3 +5,4 @@
 5. Leetcode 84: Largest rectangle in histogram
 6. Leetcode 239: Maximum sliding window
 7. Leetcode 71: Simplify path
+8. Leetcode 1438: 
