@@ -30,6 +30,7 @@ When solving a binary tree problem with recursion, the first step is to figure o
 6. ancestor - any node up the path to reach the parent (nodes could be their own ancestors but question needs to specify)
 7. depth of a node -> number of edges from root down to that node 
 8. height of a node -> number of edges from select node down to its deepest leaf node 
+9. level -> number of nodes in a level of a tree (j) can be estimated using 2^j
 
 =============== NOTES ===============
 1. height of a tree can referenced in either edges or nodes and clarifying which the problem uses is expected

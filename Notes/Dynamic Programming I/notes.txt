@@ -7,5 +7,19 @@ Backtracking
 - a constant number of choices at each node is not a rule for all backtracking problems
 - "working" state is the variable a call needs to know if continuation if feasible/allowed
 - invariant
+- subsets 
+    -> include/exclude 
+    -> start index 
+- runtimes 
+    -> permutations: O(n!)
+    -> combinations: O(2^n) ~ depends 
+- prune/pruning
+- recursive search can produce 
+    -> generate items 
+    -> count items 
+    -> minimize items 
+    -> decide existence 
+- A zero-success value in minimum search means “no more items are needed,” not “the whole path used zero items.” [relates to prefix-sum]
+    -> each caller adds the count of its own choice 
 
 Top-down DP 
