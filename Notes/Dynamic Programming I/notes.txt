@@ -21,5 +21,14 @@ Backtracking
     -> decide existence 
 - A zero-success value in minimum search means “no more items are needed,” not “the whole path used zero items.” [relates to prefix-sum]
     -> each caller adds the count of its own choice 
+- practice writing the state before the code 
+    -> meaning of one call 
+    -> stopping condition
+    -> availability rule 
+- memoization 
 
 Top-down DP 
+- overlapping subproblem -> occurs when recursive function request the same subproblem multiple times
+- optimal substructure -> 
+- recurrence 
+- cached values must be independent from previous state to resolve in simple memoization, else previous state must be included in the memoization
