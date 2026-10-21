@@ -26,3 +26,4 @@ Lecture 2: Weighted graphs
 - Union roots by rank 
   - only update rank of one when both ranks are equal
   - root is a vertex whose parent is itself 
+  - rank tracks depth of a node (which is what slows down find)

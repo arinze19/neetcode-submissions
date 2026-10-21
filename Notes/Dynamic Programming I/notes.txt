@@ -5,7 +5,7 @@ Backtracking
 - branching factor: number of child calls available
 - depth: number of decisions from the root 
 - a constant number of choices at each node is not a rule for all backtracking problems
-- "working" state is the variable a call needs to know if continuation if feasible/allowed
+- "working" state is the variable a call needs to know if continuation is feasible/allowed
 - invariant
 - subsets 
     -> include/exclude 
@@ -13,6 +13,8 @@ Backtracking
 - runtimes 
     -> permutations: O(n!)
     -> combinations: O(2^n) ~ depends 
+
+Dynamic Programming I 
 - prune/pruning
 - recursive search can produce 
     -> generate items 
@@ -26,9 +28,18 @@ Backtracking
     -> stopping condition
     -> availability rule 
 - memoization 
+    -> state: what 
+    -> recurrence: how 
+- safe sentinel -> special marker meaning "not yet computed"
+- climbing stairs
+    -> position != remaining
+- Avoid describing only what the function does procedurally; its return value must be meaningful independently of the path that called it
+- Design state before writing code 
+- Ensure each iteration drives towards a base case 
 
 Top-down DP 
 - overlapping subproblem -> occurs when recursive function request the same subproblem multiple times
 - optimal substructure -> 
 - recurrence 
 - cached values must be independent from previous state to resolve in simple memoization, else previous state must be included in the memoization
+- bottom-up builds answers from base cases 

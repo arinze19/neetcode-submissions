@@ -27,8 +27,8 @@ dp indices represent STEPS 0 through n inclusive hence why tabulation tables usu
 Backtracking (brute force, identify subproblems)
       ↓
 Is greedy applicable?
-   YES → Greedy (O(n log n) usually)    STOP HERE if optimal
-   NO  ↓
+      NO  YES → Greedy (O(n log n) usually)    STOP HERE if optimal
+      ↓
 Memoization (top-down DP)
       ↓
 Tabulation (bottom-up DP)
